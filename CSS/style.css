@@ -1,0 +1,470 @@
+/*Não consegui fazer algumas coisas do que foi pedido, como animação no menu usando keyframes e tbm não consegui deixar*/
+/*a header fixa, pois só consegui posicionar alguns elementos do site usando o position absolute e ai quando a header fica fixa*/
+/*esses elementos "passam por cima" da header. Não consegui pensar rapidamente em outra forma de posicionar  elementos, então resolvi*/
+/*entregar o projeto a tempo, respeitando o prazo, mas pontuando tais erros.*/
+
+
+/*------------ Estilo Menu ---------------- */
+body{
+    font-family: Georgia, serif;
+}
+header{
+    height: 70px;
+    background:	#242423;
+    width: 100%;
+  
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+header ul{
+    padding-right: 80px;
+    display: flex;
+    align-items: center;
+}
+
+header li a{
+    padding-right: 20px;
+    font-family: Georgia, serif;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    height: 35px;
+    margin-top: 15px;
+    margin-left: 200px;
+}
+
+/* ------------------------------------------ */
+
+/* ---------- Primeira section --------------- */
+#hmpg div{
+    position: relative;
+    display: inline-block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;    
+}
+
+.sec01 {
+    display: block;
+    position: absolute;
+    top: 200px;
+    left: 440px;
+    font-size: 50px;
+    color: white;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.sec01-02 {
+    position: absolute;
+    top: 250px;
+    left: 520px;
+    font-size: 50px;
+    color: white;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;  
+}
+
+.sec01-03{
+    position: absolute;
+    top: 320px;
+    left: 540px;
+    font-size: 20px;
+    color: white;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.img-cup{
+    max-width: 100%;
+}
+
+
+/* --------------------------------------------*/
+/* ---------- Segunda section --------------- */
+
+h3{
+    padding-top: 40px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.picsty {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;  
+}
+    
+ #dimdiv div{
+    width: 100%;
+    justify-content: center;
+ }
+
+ 
+.container {
+    display: flex;
+    justify-content: center;
+	max-width: 400px;
+    margin: 0 auto;
+}
+
+.container02{
+    position: absolute;
+    background:	#242423;
+    height: 40px;
+    width: 215px;
+    top: 808px;
+    left: 205px;
+    color: whitesmoke;
+    font-size: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+.container03{
+    position: absolute;
+    background:	#242423;
+    height:40px;
+    width: 215px;
+    top: 808px;
+    left: 685px;
+    color: whitesmoke;
+    font-size: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+.containertext{
+    position: relative;
+    padding-top: 60px;
+    height: 180px;
+    width: 450px;
+    text-align:  center;
+    left: 480px;
+    font-size: 1.2em;
+}
+
+/*-------------------------------------------------*
+
+/*------------ Terceira Section -------------------*/
+
+.colorsec03{
+    background-color: #edddd4;
+    border-top: groove 5px; 
+    border-bottom: groove 5px; 
+}
+
+
+.colordiv01{
+    width: 12rem;
+    height: 12rem;
+    left: 50px;
+    /*align-self: center;*/
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color:#3d1308; 
+}
+
+
+.colordiv02{
+    width: 10rem;
+    height: 10rem;
+    /*align-self: center;*/
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 12px;
+    left: 11px;
+    background-color:#3d1308;
+    border: solid 5px #edddd4;
+     
+}
+
+.colordiv03{
+    width: 12rem;
+    height: 12rem;
+    left: 135px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color:#eb5e28;   
+}
+
+.colordiv04{
+    width: 10rem;
+    height: 10rem;
+    left: 100px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 12px;
+    left: 10px;
+    background-color:#eb5e28; 
+    border: solid 5px #edddd4;
+}
+     
+
+.colordiv05{
+    width: 12rem;
+    height: 12rem;
+    left: 130px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color:#FFB627;
+}
+
+.colordiv06{
+    width: 10rem;
+    height: 10rem;
+    left: 200px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    background-color:#FFB627;
+    border: solid 5px #edddd4;
+}
+
+.rowgmh {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.context01{
+    padding-top: 20px;
+    padding-left: 10px;
+    height: 150px;
+    width:320px;
+    font-size: 1em;
+    text-align: justify;
+}
+
+.context02{
+    padding-top: 20px;
+    padding-left: 100px;
+    height: 150px;
+    width:320px;
+    font-size: 1em;
+    text-align: justify; 
+}
+
+.context03{
+    padding-top: 20px;
+    padding-left: 100px;
+    height: 150px;
+    width:320px;
+    font-size: 1em;
+    text-align: justify; 
+}
+
+.tit01{
+    padding-top: 20px;
+    padding-left: 80px;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.tit02{
+    padding-top: 20px;
+    padding-left: 160px;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.tit03{
+    padding-top: 20px;
+    padding-left: 170px;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.button {
+    background-color: #edddd4; 
+    border: 3px solid #242423;
+    color:#242423;
+    padding: 15px 32px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 600px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.buttonefeito:hover{
+    background-color: #242423;
+    color: white;
+
+}
+/*------------------------------------------------*/
+
+/*--------------- Quarta Section -------------------*/
+
+.buttontwo {
+    background-color:white; 
+    border: 3px solid #242423;
+    color:#242423;
+    padding: 10px 30px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+    
+}
+
+.buttontwoefeito:hover{
+    background-color: #242423;
+    color: white;
+
+}
+
+.titlee02{
+    padding-top: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.containertext03{
+    padding-top: 20px;
+    height: 60px;
+    width:300px;
+    font-size: 1em;
+    text-align: justify;
+}
+
+.divisao{
+    margin-top: 60px;
+    margin-left: 150px;
+    width: auto;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+         
+.listhmm01 {
+    position: absolute;
+    top: -24px;
+    left: 490px;
+}
+
+.listhmm02 {
+    position: absolute;
+    top: 290px;
+    left: 490px;
+}
+
+.listhmm03 {
+    position: absolute;
+    top: 605px;
+    left: 490px;
+}
+
+.espc{
+    margin-bottom: 50px;
+}
+
+/*----------------- Quinta section ------------------------*/
+
+footer{
+    height: 100px;
+    background:	#242423;
+}
+
+.logo2{
+    height: 30px;
+    margin-top: 30px;
+    margin-left: 1000px;
+}
+
+.container04{
+    display: flex;
+    position: relative;
+    height: 200px;
+    background-color: #edddd4;
+}
+
+
+.fonthmmt{
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.fonthmmt02{
+    position: absolute;
+    top:90px;
+    left: 150px;
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+.buttonthree {
+    background-color:#242423;
+    color: #edddd4;
+    padding: 13px 32px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-size: 16px;
+    justify-content: center;
+    margin: 0;
+}
+
+.direform{
+    position: absolute;
+    top: 50px;
+    left: 600px;
+}
+
+
+
+.text-input{
+    padding-left: 10px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    width:350px;
+    height: 40px;
+    border: solid 2px #242423;
+    margin: 0;
+  }
+
+  /*-----------------------------------------------------*/
