@@ -1,18 +1,14 @@
-/*Não consegui fazer algumas coisas do que foi pedido, como animação no menu usando keyframes, responsividade e tbm não consegui deixar*/
-/*a header fixa, pois só consegui posicionar alguns elementos do site usando o position absolute e ai quando a header fica fixa*/
-/*esses elementos "passam por cima" da header. Não consegui pensar rapidamente em outra forma de posicionar  elementos, então resolvi*/
-/*entregar o projeto a tempo, respeitando o prazo, mas pontuando tais incorreções.*/
-
-
+/*Falta fazer a responsividade do site e animação com keyframe nas bolinhas e no menu*/
 /*------------ Estilo Menu ---------------- */
+
 body{
     font-family: Georgia, serif;
 }
 header{
+    position: fixed;
     height: 70px;
     background:	#242423;
     width: 100%;
-  
 }
 
 header nav{
@@ -43,57 +39,50 @@ header li a{
 }
 
 /* ------------------------------------------ */
-
 /* ---------- Primeira section --------------- */
-#hmpg div{
-    position: relative;
-    display: inline-block;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: normal;    
+#confdiv{
+    background-image: url('../img/bg-intro.jpg');
+    height: 460px;
+    width: 1348px;
+    display: flex;
+    flex-direction: column;
 }
 
-.sec01 {
-    display: block;
-    position: absolute;
-    top: 200px;
-    left: 440px;
+.maintitle01{
     font-size: 50px;
-    color: white;
-    justify-content: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:white;
+    font-family: Georgia, serif;
     font-weight: bold;
+    margin-top: 180px;
+    margin-left: 420px;
 }
 
-.sec01-02 {
-    position: absolute;
-    top: 250px;
-    left: 520px;
+.maintitle02 {
+    margin-left: 540px;
     font-size: 50px;
     color: white;
-    justify-content: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, serif;
     font-weight: bold;  
 }
 
-.sec01-03{
-    position: absolute;
-    top: 320px;
-    left: 540px;
+.secundarytitle{
+    margin-top: 20px;
+    margin-left: 520px;
     font-size: 20px;
-    color: white;
-    justify-content: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:white;
+    font-family: Georgia,  serif;
     font-style: italic;
 }
-
-.img-cup{
-    max-width: 100%;
-}
-
 
 /* --------------------------------------------*/
 /* ---------- Segunda section --------------- */
 
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 h3{
     padding-top: 40px;
     text-align: center;
@@ -101,162 +90,176 @@ h3{
     font-weight: bold;
 }
 
-
-.picsty {
-    padding-top: 40px;
+#alinhafotos{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 10px;  
-}
-    
- #dimdiv div{
     width: 100%;
-    justify-content: center;
- }
+    padding-top: 40px;
+}
 
- 
-.container {
-    display: flex;
-    justify-content: center;
-	max-width: 400px;
-    margin: 0 auto;
+.pic{
+    margin-right: 20px;
 }
 
 .container02{
-    position: absolute;
     background:	#242423;
     height: 40px;
     width: 215px;
-    top: 808px;
-    left: 205px;
     color: whitesmoke;
     font-size: 1.5em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia,  serif;
     font-weight: bold;
     text-align: center;
     padding-top: 10px;
 }
 
-
-.container03{
-    position: absolute;
-    background:	#242423;
-    height:40px;
-    width: 215px;
-    top: 808px;
-    left: 685px;
-    color: whitesmoke;
-    font-size: 1.5em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 10px;
+.alinhaconteiners{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
+.margincont01{
+    margin-top: -25px;
+    margin-left: 205px;
+}
+
+.margincont02{
+    margin-top: -25px;
+    margin-left: 265px;
+}
 
 .containertext{
-    position: relative;
-    padding-top: 60px;
+    margin-left: 470px;
+    margin-top: 70px;
     height: 180px;
-    width: 450px;
-    text-align:  center;
-    left: 480px;
-    font-size: 1.2em;
+    width: 400px;
+    font-style: italic;
+    text-align: center;
+    font-size: 1.1em;
 }
 
 /*-------------------------------------------------*
 
 /*------------ Terceira Section -------------------*/
-
-.colorsec03{
+.confisec03{
     background-color: #edddd4;
     border-top: groove 5px; 
     border-bottom: groove 5px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+.alinhabolinhas{
+    display: flex;
+    flex-direction: row;
+    padding-top: 70px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
 
 .colordiv01{
     width: 12rem;
     height: 12rem;
     left: 50px;
-    /*align-self: center;*/
     border-radius: 100%;
     overflow: hidden;
-    position: relative;
-    background-color:#3d1308; 
+    background-color:#3d1308;
+    margin-left: 120px;
 }
-
 
 .colordiv02{
     width: 10rem;
     height: 10rem;
-    /*align-self: center;*/
     border-radius: 100%;
     overflow: hidden;
-    position: relative;
-    top: 12px;
-    left: 11px;
     background-color:#3d1308;
     border: solid 5px #edddd4;
-     
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .colordiv03{
     width: 12rem;
     height: 12rem;
-    left: 135px;
     border-radius: 100%;
     overflow: hidden;
-    position: relative;
-    background-color:#eb5e28;   
+    background-color:#eb5e28; 
+    margin-left: 220px;  
 }
 
 .colordiv04{
     width: 10rem;
     height: 10rem;
-    left: 100px;
     border-radius: 100%;
     overflow: hidden;
-    position: relative;
-    top: 12px;
-    left: 10px;
     background-color:#eb5e28; 
     border: solid 5px #edddd4;
+    margin-top: 10px;
+    margin-left: 10px;
 }
      
 
 .colordiv05{
     width: 12rem;
     height: 12rem;
-    left: 130px;
     border-radius: 100%;
     overflow: hidden;
-    position: relative;
     background-color:#FFB627;
+    margin-left: 230px; 
 }
 
 .colordiv06{
     width: 10rem;
     height: 10rem;
-    left: 200px;
     border-radius: 100%;
     overflow: hidden;
-    position: relative;
-    top: 10px;
-    left: 10px;
     background-color:#FFB627;
     border: solid 5px #edddd4;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
-.rowgmh {
+.alinhatit{
     display: flex;
-    justify-content: center;
-    padding-top: 70px;
-    padding-right: 50px;
-    padding-left: 50px;
+    flex-direction: row;
+    
 }
 
+.tit01{
+    padding-top: 20px;
+    padding-left: 80px;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: Georgia,  serif;
+    margin-left: 100px;
+}
+
+.tit02{
+    padding-top: 20px;
+    padding-left: 160px;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    margin-left: 125px;
+}
+
+.tit03{
+    padding-top: 20px;
+    padding-left: 170px;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: Georgia,  serif;
+    margin-left: 130px;
+}
+
+.alinhacontext{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .context01{
     padding-top: 20px;
     padding-left: 10px;
@@ -284,31 +287,8 @@ h3{
     text-align: justify; 
 }
 
-.tit01{
-    padding-top: 20px;
-    padding-left: 80px;
-    font-size: 2em;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.tit02{
-    padding-top: 20px;
-    padding-left: 160px;
-    font-size: 2em;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.tit03{
-    padding-top: 20px;
-    padding-left: 170px;
-    font-size: 2em;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
 .button {
+    width: 200px; 
     background-color: #edddd4; 
     border: 3px solid #242423;
     color:#242423;
@@ -319,8 +299,7 @@ h3{
     text-decoration: none;
     font-size: 16px;
     margin-left: 600px;
-    margin-bottom: 30px;
-    justify-content: center;
+    margin-bottom: 100px;
 }
 
 .buttonefeito:hover{
@@ -331,6 +310,35 @@ h3{
 /*------------------------------------------------*/
 
 /*--------------- Quarta Section -------------------*/
+.divisao{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-left: 150px;   
+}
+
+.alinharimgelist{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    margin-bottom: 60px;
+}
+
+.titlee02{
+    padding-left: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.containertext03{
+    padding-top: 20px;
+    padding-left: 20px;
+    height: 60px;
+    width:300px;
+    font-size: 1em;
+    text-align: justify;
+}
 
 .buttontwo {
     background-color:white; 
@@ -343,128 +351,106 @@ h3{
     text-decoration: none;
     font-size: 16px;
     margin-top: 10px;
-    
+    margin-left: 20px;
 }
 
 .buttontwoefeito:hover{
     background-color: #242423;
     color: white;
-
 }
 
-.titlee02{
-    padding-top: 20px;
-    font-size: 2em;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.containertext03{
-    padding-top: 20px;
-    height: 60px;
-    width:300px;
-    font-size: 1em;
-    text-align: justify;
-}
-
-.divisao{
-    margin-top: 60px;
-    margin-left: 150px;
-    width: auto;
-    position: relative;
-    display: inline-block;
-    margin-bottom: 50px;
-}
-         
-.listhmm01 {
-    position: absolute;
-    top: -24px;
-    left: 490px;
-}
-
-.listhmm02 {
-    position: absolute;
-    top: 290px;
-    left: 490px;
-}
-
-.listhmm03 {
-    position: absolute;
-    top: 605px;
-    left: 490px;
-}
-
-.espc{
-    margin-bottom: 50px;
-}
-
+/*---------------------------------------------------------*/
 /*----------------- Quinta section ------------------------*/
-
-footer{
-    height: 100px;
-    background:	#242423;
-}
-
-.logo2{
-    height: 30px;
-    margin-top: 30px;
-    margin-left: 1000px;
-}
-
-.container04{
+.configsec05{
     display: flex;
-    position: relative;
+    flex-direction: row;
     height: 200px;
     background-color: #edddd4;
 }
 
+.container04{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
 
 .fonthmmt{
-    position: absolute;
-    top: 50px;
-    left: 150px;
     font-weight: bold;
     font-size: 2em;
+    margin-top: 40px;
+    margin-left: 70px;
 }
 
 .fonthmmt02{
-    position: absolute;
-    top:90px;
-    left: 150px;
     font-style: italic;
     font-size: 1.5em;
+    margin-left: 70px;
 }
 
+.configform{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+   
 .buttonthree {
     background-color:#242423;
     color: #edddd4;
     padding: 13px 32px;
     text-align: center;
     font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, serif;
     text-decoration: none;
     font-size: 16px;
     justify-content: center;
-    margin: 0;
 }
-
-.direform{
-    position: absolute;
-    top: 50px;
-    left: 600px;
-}
-
-
 
 .text-input{
-    padding-left: 10px;
     font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, serif;
     font-size: 1.2em;
     width:350px;
     height: 40px;
     border: solid 2px #242423;
-    margin: 0;
-  }
+}
+/*------------------------------------------------*/
+/*-----------------Footer -------------------------*/
+footer{
+    height: 100px;
+    background:	#242423;
+}
 
-  /*-----------------------------------------------------*/
+.confoot{
+    display: flex;
+    flex-direction: row;
+}
+
+.ender{
+    color:white;
+    font-size: 1em;
+    margin-left: 60px;
+    margin-top: 40px;
+}
+
+.logo2{
+    height: 30px;
+    margin-top: 40px;
+   margin-left:600px;
+}
+/*-----------------------------------------------------*/
+
+/*.animationkeyframe{
+    animation-duration: 5s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-top: 0%;
+      width: 300%
+    }
+  
+    to {
+      margin-bottom: 100%;
+      width: 100%;
+    }
+  }*/
