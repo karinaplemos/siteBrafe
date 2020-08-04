@@ -1,3 +1,6 @@
+/*OBS.: Não consegui realizar a animação em keyframes nas bolinhas. E com relação a animação do menu não consegui fazer*/
+/*a que foi pedida, mas visando tentar fazer algo, apliquei outra animação da qual absorvi bem nas aulas que foi passada.*/
+
 /*------------ Estilo Menu ---------------- */
 body{
     font-family: Georgia, serif;
@@ -445,6 +448,9 @@ footer{
 /*-----------------------------------------------------*/
 
 /* ---------- Responsividade do site -------------------*/
+
+/*OBS.:Não consegui deixar o responsivo exatamente como foi pedido, mas tentei ao menos deixar funcional para o usuário*/
+/*pudesse visualizar todo o conteúdo em uma melhor disposição dos elementos, mesmo em tela menor.*/
 
 /*------------ Estilo Menu ---------------- */
 @media only screen and (max-width: 850px){
