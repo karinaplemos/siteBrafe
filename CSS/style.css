@@ -1,6 +1,4 @@
-/*Falta fazer a responsividade do site e animação com keyframe nas bolinhas e no menu*/
 /*------------ Estilo Menu ---------------- */
-
 body{
     font-family: Georgia, serif;
 }
@@ -20,6 +18,7 @@ header nav{
 header ul{
     padding-right: 80px;
     display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -28,9 +27,13 @@ header li a{
     font-family: Georgia, serif;
     text-decoration: none;
     color: white;
-    display: flex;
-    flex-direction: row;
 }
+
+.animation:hover{
+    color: #c0fdff;
+}
+
+
 
 .logo{
     height: 35px;
@@ -98,8 +101,12 @@ h3{
     padding-top: 40px;
 }
 
-.pic{
+.pic1{
     margin-right: 20px;
+}
+
+.pic2{
+   
 }
 
 .container02{
@@ -163,7 +170,6 @@ h3{
 .colordiv01{
     width: 12rem;
     height: 12rem;
-    left: 50px;
     border-radius: 100%;
     overflow: hidden;
     background-color:#3d1308;
@@ -287,7 +293,7 @@ h3{
     text-align: justify; 
 }
 
-.button {
+.button{
     width: 200px; 
     background-color: #edddd4; 
     border: 3px solid #242423;
@@ -438,19 +444,202 @@ footer{
 }
 /*-----------------------------------------------------*/
 
-/*.animationkeyframe{
-    animation-duration: 5s;
-    animation-name: slidein;
-  }
-  
-  @keyframes slidein {
-    from {
-      margin-top: 0%;
-      width: 300%
+/* ---------- Responsividade do site -------------------*/
+
+/*------------ Estilo Menu ---------------- */
+@media only screen and (max-width: 850px){
+    header{
+        height: 100px;
     }
-  
-    to {
-      margin-bottom: 100%;
-      width: 100%;
+
+    header nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     }
-  }*/
+
+    header ul{
+        padding-bottom: 20px;
+        padding-left: 280px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .logo{
+        padding-top: 0;
+        padding-left: 200px;
+        padding-bottom: 20px;
+        height: 30px;
+        width: 70px;
+    }
+/*----------------------------------------------*/
+/* ---------- Primeira section --------------- */
+    .maintitle01{
+        margin-left: 150px;
+    }
+
+    .maintitle02 {
+        margin-left: 250px; 
+    }
+    .secundarytitle{
+        margin-left: 230px;
+    }
+/*-----------------------------------------------*/
+/*---------------- Segunda section ---------------*/
+    .containertext{
+        margin-left: 220px;
+    }
+
+    #alinhafotos{
+        flex-direction: column;
+    }
+
+    .pic1{
+        margin-right: 200px;
+        margin-left: 200px;
+        margin-bottom: 100px;
+    }
+
+    .pic2{
+        margin-right: 200px;
+        margin-left: 200px;
+    }
+
+    .alinhaconteiners{
+        flex-direction: column;
+    }
+
+    .margincont01{
+        margin-top: -325px;
+        margin-left: 330px;
+    }
+    
+    .margincont02{
+        margin-top: 250px;
+        margin-left: 330px;
+    }
+/*-------------------------------------------*/
+/*------------- Terceira sectioon ------------*/
+
+.alinhabolinhas{
+    padding-left: 50px;
+}
+
+.colordiv01{
+    margin-right: -5px;
+    margin-left: 30px;
+    width: 50rem;
+    height: 10rem;
+}
+
+.colordiv02{
+    width: 8.5rem;
+    height: 8rem;
+}
+
+.colordiv03{
+    margin-left: 90px;
+    width: 50rem;
+    height: 10rem;
+    
+}
+
+.colordiv04{
+    width: 8.5rem;
+    height: 8rem;
+}
+     
+
+.colordiv05{
+    margin-right: 40px;
+    margin-left: 100px;
+    width: 50rem;
+    height: 10rem;
+}
+
+.colordiv06{
+    width: 8.5rem;
+    height: 8rem;
+}
+
+.tit01{
+    padding-left: 5px;
+}
+
+.tit02{
+    padding-left: 10px;
+}
+
+.tit03{
+    padding-left: 1px;
+}
+
+.context01{
+    width: 200px;
+    padding-left: 10px;
+}
+
+.context02{
+    width: 200px;
+    padding-left: 50px;
+}
+
+.context03{
+    width: 200px;
+    padding-left: 50px;
+}
+.button{
+    margin-left: 300px;
+}
+
+/*--------------------------------------------*/
+/*--------------- Quarta section -------------*/
+.divisao{
+    margin-left: 1px;   
+}
+/*---------------------------------------------*/
+/*-------------- Quinta section ------------*/
+.configsec05{
+    flex-direction: column;
+}
+
+.fonthmmt{
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+.fonthmmt02{
+    margin-left: 250px;
+}
+
+.configform{
+    margin-top: 10px;
+    margin-left: 180px;
+    margin-bottom: 50px;
+}
+/*--------------------------------------------*/
+
+/*------------------Footer --------------------*/
+footer{
+    height: 200px;
+}
+
+.confoot{
+    flex-direction: column;
+}
+
+.ender{
+    margin-left:200px;
+    margin-top: 40px;
+}
+
+.logo2{
+    margin-top: 50px;
+    margin-left: 350px;
+    height: 50px;
+    width: 100px;
+}
+/*----------------------------------------------*/
+
+}
