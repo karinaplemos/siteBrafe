@@ -83,13 +83,7 @@ header li a{
 /* --------------------------------------------*/
 /* ---------- Segunda section --------------- */
 
-
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-h3{
+.misturastyle{
     padding-top: 40px;
     text-align: center;
     font-size: 25px;
@@ -104,13 +98,27 @@ h3{
     padding-top: 40px;
 }
 
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h3{
+    padding-top: 40px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
 .pic1{
     margin-right: 20px;
 }
 
 .pic2{
-   
-}
+    margin: 1px;
+ }
 
 .container02{
     background:	#242423;
@@ -132,13 +140,13 @@ h3{
 
 .margincont01{
     margin-top: -25px;
-    margin-left: 205px;
 }
 
 .margincont02{
     margin-top: -25px;
-    margin-left: 265px;
 }
+
+
 
 .containertext{
     margin-left: 470px;
@@ -239,7 +247,7 @@ h3{
 
 .tit01{
     padding-top: 20px;
-    padding-left: 80px;
+    padding-left: 20px;
     font-size: 2em;
     font-weight: bold;
     font-family: Georgia,  serif;
@@ -248,7 +256,7 @@ h3{
 
 .tit02{
     padding-top: 20px;
-    padding-left: 160px;
+    padding-left: 80px;
     font-size: 2em;
     font-weight: bold;
     font-family: Georgia, serif;
@@ -257,12 +265,13 @@ h3{
 
 .tit03{
     padding-top: 20px;
-    padding-left: 170px;
+    padding-left: 70px;
     font-size: 2em;
     font-weight: bold;
     font-family: Georgia,  serif;
     margin-left: 130px;
 }
+
 
 .alinhacontext{
     display: flex;
@@ -296,12 +305,14 @@ h3{
     text-align: justify; 
 }
 
+
 .button{
-    width: 200px; 
+    height: 50px;
+    width: 150px; 
     background-color: #edddd4; 
     border: 3px solid #242423;
     color:#242423;
-    padding: 15px 32px;
+    padding-top: 1px;
     text-align: center;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -310,7 +321,6 @@ h3{
     margin-left: 600px;
     margin-bottom: 100px;
 }
-
 .buttonefeito:hover{
     background-color: #242423;
     color: white;
@@ -504,12 +514,14 @@ footer{
     .pic1{
         margin-right: 200px;
         margin-left: 200px;
-        margin-bottom: 100px;
+        margin-bottom: 1px;
     }
+
 
     .pic2{
         margin-right: 200px;
         margin-left: 200px;
+        margin-top: 50px;
     }
 
     .alinhaconteiners{
@@ -517,13 +529,16 @@ footer{
     }
 
     .margincont01{
-        margin-top: -325px;
-        margin-left: 330px;
+        margin-top: -25px;
+        margin-left: 300px;
     }
-    
+        
     .margincont02{
-        margin-top: 250px;
-        margin-left: 330px;
+        margin-left: 300px;
+    }
+
+    #alinhafotos{
+        flex-direction: column;
     }
 /*-------------------------------------------*/
 /*------------- Terceira sectioon ------------*/
@@ -540,7 +555,7 @@ footer{
 }
 
 .colordiv02{
-    width: 8.5rem;
+    width: 7.5rem;
     height: 8rem;
 }
 
@@ -552,7 +567,7 @@ footer{
 }
 
 .colordiv04{
-    width: 8.5rem;
+    width: 7.5rem;
     height: 8rem;
 }
      
@@ -565,10 +580,43 @@ footer{
 }
 
 .colordiv06{
-    width: 8.5rem;
+    width: 7.5rem;
     height: 8rem;
 }
 
+.tit01{
+    margin-left: 30px;
+}
+
+.tit02{
+    margin-left: 70px;
+    
+}
+
+.tit03{
+    margin-left: 90px;
+}
+
+.context01{
+    width: 200px;
+    padding-left: 10px;
+}
+
+.context02{
+    width: 200px;
+    padding-left: 50px;
+}
+
+.context03{
+    width: 200px;
+    padding-left: 50px;
+}
+.button{
+    margin-left: 300px;
+}
+
+/*--------------------------------------------*/
+/*--------------- Quarta section -------------*/
 .tit01{
     padding-left: 5px;
 }
@@ -599,11 +647,16 @@ footer{
     margin-left: 300px;
 }
 
-/*--------------------------------------------*/
-/*--------------- Quarta section -------------*/
 .divisao{
     margin-left: 1px;   
 }
+
+.alinharimgelist{
+    flex-direction: column;
+    width: 500px;
+}
+
+
 /*---------------------------------------------*/
 /*-------------- Quinta section ------------*/
 .configsec05{
@@ -649,3 +702,8 @@ footer{
 /*----------------------------------------------*/
 
 }
+
+
+ 
+
+
