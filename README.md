@@ -1,1 +1,1 @@
-# Site feito para colocar em prática conhecimentos básicos de HTML e CSS
+# Site feito para colocar em prática conhecimentos de HTML e CSS
